@@ -9,16 +9,16 @@
 
     <TextView
         style="@style/genre"
-        android:text="Musicals"
+        android:text="@string/musicals"
          />
 
     <TextView
-        android:text="Soundtracks"
+        android:text="@string/soundtracks"
         style="@style/genre" />
 
     <TextView
         style="@style/genre"
-        android:text="Disney"
+        android:text="@string/disney"
         />
 
 </LinearLayout>
