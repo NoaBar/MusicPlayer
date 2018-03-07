@@ -10,15 +10,19 @@
     <TextView
         style="@style/genre"
         android:text="@string/musicals"
+        android:id="@+id/musicals"
          />
 
     <TextView
         android:text="@string/soundtracks"
-        style="@style/genre" />
+        style="@style/genre"
+        android:id="@+id/soundtracks"
+        />
 
     <TextView
         style="@style/genre"
         android:text="@string/disney"
+        android:id="@+id/disney"
         />
 
 </LinearLayout>
