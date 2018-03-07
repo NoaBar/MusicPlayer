@@ -20,6 +20,9 @@
         <activity android:name=".MusicalsActivity"
             android:label="@string/musicals"/>
 
+        <activity android:name=".DisneyActivity"
+            android:label="@string/disney"/>
+
     </application>
 
 </manifest>

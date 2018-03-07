@@ -22,6 +22,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TextView disney = (TextView) findViewById(R.id.disney);
+        disney.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent disneyIntent = new Intent(MainActivity.this, DisneyActivity.class);
+                startActivity(disneyIntent);
+            }
+        });
+
 
 
 
