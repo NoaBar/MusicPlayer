@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/twenty"
+    >
+
+    <ImageView
+        android:id="@+id/image_details"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        tools:src="@drawable/ic_launcher_background"
+        android:contentDescription="@string/cover_of_album"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/name_song_details"
+        android:textStyle="bold"
+        tools:text="Name of song"
+        style="@style/song_details" />
+
+    <TextView
+        android:id="@+id/album_details"
+        tools:text="Album"
+        style="@style/song_details"
+        />
+
+    <TextView
+        style="@style/song_details"
+        android:id="@+id/artistDetails"
+        tools:text="Artist"
+        android:singleLine="false"
+        android:maxLines="4"
+        />
+
+    <TextView
+        android:id="@+id/character_details"
+        style="@style/song_details"
+        tools:text="Character"
+        />
+
+    <TextView
+        android:id="@+id/yearDetails"
+        style="@style/song_details"
+        tools:text="Year"
+        />
+
 
 </LinearLayout>

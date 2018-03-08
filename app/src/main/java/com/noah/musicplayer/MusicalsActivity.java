@@ -18,21 +18,21 @@ public class MusicalsActivity extends AppCompatActivity {
         //Create an array of songs
         ArrayList<Song> songs = new ArrayList<>();
         songs.add(new Song("I have confidence", "Sounds of Music", "Julie Andrews",
-                R.drawable.sound_of_music));
+                R.drawable.sound_of_music, "character","1999"));
         songs.add(new Song("Santa Fe", "Rent", "Jesse L. Martin",
-                R.drawable.rent));
+                R.drawable.rent, "character","1999"));
         songs.add(new Song("The Wizard and I", "Wicked", "Idina Menzel",
-                R.drawable.wicked));
+                R.drawable.wicked, "character","1999"));
         songs.add(new Song("No Good Deed", "Wicked", "Idina Menzel",
-                R.drawable.wicked));
+                R.drawable.wicked, "character","1999"));
         songs.add(new Song("I Got Life", "Hair", "Treat Williams",
-                R.drawable.hair));
+                R.drawable.hair, "character","1999"));
         songs.add(new Song("Maria", "West Side Story", "Jimmy Bryant",
-                R.drawable.west_side_story));
+                R.drawable.west_side_story, "character","1999"));
         songs.add(new Song("On My Own", "Les Miserables", "Samantha Barks",
-                R.drawable.les_mis));
+                R.drawable.les_mis, "character","1999"));
         songs.add(new Song("Cell Block Tango", "Chicago", "Cell Block Girls",
-                R.drawable.chicago));
+                R.drawable.chicago, "character","1999"));
 
         SongAdapter adapter = new SongAdapter(this, songs);
         ListView listView = (ListView) findViewById(R.id.list);

@@ -27,6 +27,18 @@ public class Song {
    */
     private int mImage;
 
+
+    /**
+     * Name of character
+     */
+    private String mCharacter;
+
+    /**
+     * Year of production
+     */
+    private String mYear;
+
+
     /**
      * Constructor
      * Create a new Song object.
@@ -34,13 +46,17 @@ public class Song {
      * @param album  is the name of album/movie/musical
      * @param artist  is the name of the artist
      * @param image is the image of the album
+     * @param character is the Name of character
+     * @param year is the Year of production
      */
-    public Song(String nameOfSong, String album, String artist, int image){
+    public Song(String nameOfSong, String album, String artist,
+                int image, String character, String year){
         mNameOfSong= nameOfSong;
         mAlbum= album;
         mArtist= artist;
         mImage= image;
-
+        mCharacter= character;
+        mYear= year;
     }
 
     /**Getters
@@ -59,4 +75,12 @@ public class Song {
     }
 
     public int getImage(){ return mImage;}
+
+    public String getCharacter(){
+        return mCharacter;
+    }
+
+    public String getYear(){
+        return mYear;
+    }
 }
