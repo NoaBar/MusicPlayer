@@ -8,7 +8,7 @@
     >
 
     <ImageView
-        android:id="@+id/image_details"
+        android:id="@+id/image"
         android:layout_width="90dp"
         android:layout_height="90dp"
         tools:src="@drawable/ic_launcher_background"
@@ -17,33 +17,33 @@
         />
 
     <TextView
-        android:id="@+id/name_song_details"
+        android:id="@+id/name_song"
         android:textStyle="bold"
         tools:text="Name of song"
         style="@style/song_details" />
 
     <TextView
-        android:id="@+id/album_details"
+        android:id="@+id/album"
         tools:text="Album"
         style="@style/song_details"
         />
 
     <TextView
         style="@style/song_details"
-        android:id="@+id/artistDetails"
+        android:id="@+id/artist"
         tools:text="Artist"
         android:singleLine="false"
         android:maxLines="4"
         />
 
     <TextView
-        android:id="@+id/character_details"
+        android:id="@+id/character"
         style="@style/song_details"
         tools:text="Character"
         />
 
     <TextView
-        android:id="@+id/yearDetails"
+        android:id="@+id/year"
         style="@style/song_details"
         tools:text="Year"
         />

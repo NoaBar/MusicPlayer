@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
  * Created by Noa B on 08-Mar-18.
  */
 
-public class SongDetails extends AppCompatActivity {
+public class SongDetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -22,7 +22,7 @@
 
         <activity android:name=".DisneyActivity"
             android:label="@string/disney"/>
-        <activity android:name=".SongDetails"
+        <activity android:name=".SongDetailsActivity"
             android:label="Song Details"/>
 
     </application>

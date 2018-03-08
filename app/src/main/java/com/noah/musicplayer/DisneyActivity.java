@@ -20,21 +20,21 @@ public class DisneyActivity extends AppCompatActivity {
         //Create an array of songs
         ArrayList<Song> songs = new ArrayList<>();
         songs.add(new Song("Two worlds", "Tarzan", "Phil Collins",
-                R.drawable.tarzan));
+                R.drawable.tarzan, "character","1999"));
         songs.add(new Song("I'll Make a Man out of you", "Mulan", "Donny Osmond",
-                R.drawable.mulan));
+                R.drawable.mulan, "character","1999"));
         songs.add(new Song("He's a trump", "Lady and the Tramp", "Peggy Lee",
-                R.drawable.lady_tramp));
+                R.drawable.lady_tramp, "character","1999"));
         songs.add(new Song("Be prepared", "The Lion King", "Chiwetel Ejiofor",
-                R.drawable.lion_king));
+                R.drawable.lion_king, "character","1999"));
         songs.add(new Song("Colors of the wind", "Pocahontas", "Irene Bedard",
-                R.drawable.pocahontas));
+                R.drawable.pocahontas, "character","1999"));
         songs.add(new Song("Not in nottingham", "Robin Hood", "Roger Miller",
-                R.drawable.robin_hood));
+                R.drawable.robin_hood, "character","1999"));
         songs.add(new Song("When I see an elephant fly", "Dumbo", "Cliff Edwards, Hall Johnson Choir, Jim Carmichael",
-                R.drawable.dumbo));
+                R.drawable.dumbo, "character","1999"));
         songs.add(new Song("The Bells of Notre Dame", "The Hunchback of Notre Dame", "Paul Kandel",
-                R.drawable.hunchback));
+                R.drawable.hunchback, "character","1999"));
 
         SongAdapter adapter = new SongAdapter(this, songs);
         ListView listView = (ListView) findViewById(R.id.list);
