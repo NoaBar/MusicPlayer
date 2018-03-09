@@ -2,7 +2,6 @@ package com.noah.musicplayer;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.text.Layout;
@@ -22,12 +21,8 @@ import java.util.ArrayList;
 
 public class SongAdapter extends ArrayAdapter<Song>{
 
-    Activity activity;
-
     public SongAdapter (Activity activity, ArrayList<Song>songs){
-
         super(activity,0,songs);
-        this.activity = activity;
     }
 
     @NonNull
@@ -40,7 +35,7 @@ public class SongAdapter extends ArrayAdapter<Song>{
                     R.layout.song_item,parent,false);
         }
 
-        final Song currentSong = getItem(position);
+        Song currentSong = getItem(position);
 
         TextView nameOfSong = (TextView) listSongsView.findViewById(R.id.name_song);
         nameOfSong.setText(currentSong.getNameOfSong());
@@ -53,17 +48,6 @@ public class SongAdapter extends ArrayAdapter<Song>{
 
         ImageView image = (ImageView) listSongsView.findViewById(R.id.image);
         image.setImageResource(currentSong.getImage());
-
-        ImageButton info = (ImageButton) listSongsView.findViewById(R.id.info);
-        info.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent infoIntent = new Intent(activity, SongDetailsActivity.class);
-                infoIntent.putExtra("song",currentSong);
-                activity.startActivity(infoIntent);
-            }
-        });
-
 
         return listSongsView;
     }
