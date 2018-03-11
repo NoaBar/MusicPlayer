@@ -1,9 +1,13 @@
 package com.noah.musicplayer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import java.util.ArrayList;
+import android.widget.AdapterView.OnItemClickListener;
 /**
  * Created by Noa B on 07-Mar-18.
  */
@@ -16,7 +20,7 @@ public class MusicalsActivity extends AppCompatActivity {
         setContentView(R.layout.songs_list);
 
         //Create an array of songs
-        ArrayList<Song> songs = new ArrayList<>();
+        final ArrayList<Song> songs = new ArrayList<>();
         songs.add(new Song("I have confidence", "Sounds of Music", "Julie Andrews",
                 R.drawable.sound_of_music, "character","1999"));
         songs.add(new Song("Santa Fe", "Rent", "Jesse L. Martin",

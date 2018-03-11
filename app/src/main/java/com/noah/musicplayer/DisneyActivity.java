@@ -1,8 +1,12 @@
 package com.noah.musicplayer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -18,7 +22,7 @@ public class DisneyActivity extends AppCompatActivity {
         setContentView(R.layout.songs_list);
 
         //Create an array of songs
-        ArrayList<Song> songs = new ArrayList<>();
+        final ArrayList<Song> songs = new ArrayList<>();
         songs.add(new Song("Two worlds", "Tarzan", "Phil Collins",
                 R.drawable.tarzan, "character","1999"));
         songs.add(new Song("I'll Make a Man out of you", "Mulan", "Donny Osmond",
@@ -40,4 +44,5 @@ public class DisneyActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
     }
+
 }

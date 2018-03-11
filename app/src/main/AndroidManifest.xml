@@ -16,13 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MusicalsActivity"
-            android:label="@string/musicals"/>
-
-        <activity android:name=".DisneyActivity"
-            android:label="@string/disney"/>
-        <activity android:name=".SongDetailsActivity"
+        <activity
+            android:name=".MusicalsActivity"
+            android:label="@string/musicals" />
+        <activity
+            android:name=".DisneyActivity"
+            android:label="@string/disney" />
+        <activity
+            android:name=".SongDetailsActivity"
             android:label="Song Details"/>
 
     </application>

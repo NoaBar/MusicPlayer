@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent musicalsIntent = new Intent(MainActivity.this, MusicalsActivity.class);
-                startActivity(musicalsIntent);
+                MainActivity.this.startActivity(musicalsIntent);
             }
         });
 
