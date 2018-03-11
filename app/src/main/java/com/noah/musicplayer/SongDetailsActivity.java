@@ -24,12 +24,12 @@ public class SongDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_song_details);
 
-        // Retrieve data from MainActivity on listview item click
+
         Intent songDetailsIntent = getIntent();
         // Get the listview item click position
         song = (Song) songDetailsIntent.getSerializableExtra("song");
 
-        // Locate the TextViews in singleitemview.xml
+        // Locate the TextViews in activity_song_details.xml
         coverImage = (ImageView) findViewById(R.id.image);
         name = (TextView) findViewById(R.id.name_song);
         album = (TextView) findViewById(R.id.album);
@@ -38,14 +38,12 @@ public class SongDetailsActivity extends AppCompatActivity {
         year = (TextView) findViewById(R.id.year);
 
 
-        // Load the text into the TextViews followed by the position
+        // Load the text into the TextViews followed by the song selected
         name.setText(song.getNameOfSong());
         album.setText(song.getAlbum());
         artist.setText(song.getArtist());
         character.setText(song.getCharacter());
         year.setText(song.getYear());
         coverImage.setImageResource(song.getImage());
-
-
     }
 }

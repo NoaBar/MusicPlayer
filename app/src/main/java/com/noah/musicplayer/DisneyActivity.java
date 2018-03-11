@@ -24,21 +24,21 @@ public class DisneyActivity extends AppCompatActivity {
         //Create an array of songs
         final ArrayList<Song> songs = new ArrayList<>();
         songs.add(new Song("Two worlds", "Tarzan", "Phil Collins",
-                R.drawable.tarzan, "character","1999"));
+                R.drawable.tarzan, "None","1999"));
         songs.add(new Song("I'll Make a Man out of you", "Mulan", "Donny Osmond",
-                R.drawable.mulan, "character","1999"));
+                R.drawable.mulan, "Shang","1998"));
         songs.add(new Song("He's a trump", "Lady and the Tramp", "Peggy Lee",
-                R.drawable.lady_tramp, "character","1999"));
+                R.drawable.lady_tramp, "Peg","1955"));
         songs.add(new Song("Be prepared", "The Lion King", "Chiwetel Ejiofor",
-                R.drawable.lion_king, "character","1999"));
+                R.drawable.lion_king, "Scar","1994"));
         songs.add(new Song("Colors of the wind", "Pocahontas", "Irene Bedard",
-                R.drawable.pocahontas, "character","1999"));
+                R.drawable.pocahontas, "Pocahontas","1995"));
         songs.add(new Song("Not in nottingham", "Robin Hood", "Roger Miller",
-                R.drawable.robin_hood, "character","1999"));
+                R.drawable.robin_hood, "Allan-a-Dale- The Rooster ","1973"));
         songs.add(new Song("When I see an elephant fly", "Dumbo", "Cliff Edwards, Hall Johnson Choir, Jim Carmichael",
-                R.drawable.dumbo, "character","1999"));
+                R.drawable.dumbo, "The Crows","1941"));
         songs.add(new Song("The Bells of Notre Dame", "The Hunchback of Notre Dame", "Paul Kandel",
-                R.drawable.hunchback, "character","1999"));
+                R.drawable.hunchback, "Clopin","1996"));
 
         SongAdapter adapter = new SongAdapter(this, songs);
         ListView listView = (ListView) findViewById(R.id.list);
