@@ -10,11 +10,12 @@
     >
     <ImageView
         android:id="@+id/image"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         tools:src="@drawable/ic_launcher_background"
         android:contentDescription="@string/cover_of_album"
         android:layout_gravity="center"
+        android:layout_margin="@dimen/twenty"
         />
 
     <TextView
