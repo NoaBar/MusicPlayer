@@ -10,11 +10,18 @@
 
     <TextView
         style="@style/genre"
+        android:paddingTop="@dimen/twenty"
+        android:text="@string/choose_genre"
+        android:id="@+id/choose_genre"
+        />
+
+    <Button
+        style="@style/genre"
         android:text="@string/musicals"
         android:id="@+id/musicals"
          />
 
-    <TextView
+    <Button
         style="@style/genre"
         android:text="@string/disney"
         android:id="@+id/disney"

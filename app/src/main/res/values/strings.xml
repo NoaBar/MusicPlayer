@@ -4,4 +4,10 @@
     <string name="musicals">Musicals</string>
     <string name="soundtracks">Soundtracks</string>
     <string name="disney">Disney</string>
+    <string name="name_title">Name</string>
+    <string name="album_title">Album</string>
+    <string name="artist_title">Artist</string>
+    <string name="character_title">Character</string>
+    <string name="year_title">Year</string>
+    <string name="choose_genre">What would you like to listen to?</string>
 </resources>
