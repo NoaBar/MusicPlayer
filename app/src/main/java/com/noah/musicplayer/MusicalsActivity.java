@@ -35,7 +35,7 @@ public class MusicalsActivity extends AppCompatActivity {
                 R.drawable.west_side_story, "Tony Wyzek","1961"));
         songs.add(new Song("On My Own", "Les Miserables (The 25th Anniversary)", "Samantha Barks",
                 R.drawable.les_mis, "Éponine","2010"));
-        songs.add(new Song("Cell Block Tango", "Chicago", "Catherine Zeta-Jones and more...",
+        songs.add(new Song("Cell Block Tango", "Chicago", "Catherine Zeta-Jones and more.",
                 R.drawable.chicago, "Cell Block Girls","2002"));
 
         SongAdapter adapter = new SongAdapter(this, songs);

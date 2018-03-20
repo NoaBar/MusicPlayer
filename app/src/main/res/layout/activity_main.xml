@@ -5,19 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.noah.musicplayer.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_margin="@dimen/twenty">
 
     <TextView
         style="@style/genre"
         android:text="@string/musicals"
         android:id="@+id/musicals"
          />
-
-    <TextView
-        android:text="@string/soundtracks"
-        style="@style/genre"
-        android:id="@+id/soundtracks"
-        />
 
     <TextView
         style="@style/genre"
