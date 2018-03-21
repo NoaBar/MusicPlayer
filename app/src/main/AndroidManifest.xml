@@ -28,10 +28,8 @@
 
     <activity
             android:name=".SongDetailsActivity"
-            android:label="Song Details" >
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity"/>
+            android:label="Song Details"
+            android:parentActivityName=".MainActivity">
     </activity>
 
 
