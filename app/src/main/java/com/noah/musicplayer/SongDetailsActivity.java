@@ -63,20 +63,21 @@ public class SongDetailsActivity extends AppCompatActivity implements View.OnCli
 //Buttons to get to MainActivity/DisneyActivity/MusicalsActivity
     @Override
     public void onClick(View view) {
+        Class activityClass;
         switch(view.getId()) {
+            default:
             case R.id.home_from_details:
-                Intent mainIntent = new Intent(SongDetailsActivity.this, MainActivity.class);
-                SongDetailsActivity.this.startActivity(mainIntent);
+                activityClass = MainActivity.class;
                 break;
             case R.id.musicals_from_details:
-                Intent musicalsIntent = new Intent(SongDetailsActivity.this, MusicalsActivity.class);
-                SongDetailsActivity.this.startActivity(musicalsIntent);
+                activityClass = MusicalsActivity.class;
                 break;
             case R.id.disney_from_details:
-                Intent disneyIntent = new Intent(SongDetailsActivity.this, DisneyActivity.class);
-                SongDetailsActivity.this.startActivity(disneyIntent);
+                activityClass = DisneyActivity.class;
                 break;
         }
+        Intent intent = new Intent(SongDetailsActivity.this, activityClass);
+        SongDetailsActivity.this.startActivity(intent);
     }
 
     @Override
