@@ -15,7 +15,6 @@ import static com.noah.musicplayer.R.id.home_from_details;
 
 public class SongDetailsActivity extends AppCompatActivity implements View.OnClickListener{
 
-
     TextView name;
     TextView album;
     TextView artist;
@@ -59,11 +58,9 @@ public class SongDetailsActivity extends AppCompatActivity implements View.OnCli
         character.setText(song.getCharacter());
         year.setText(song.getYear());
         coverImage.setImageResource(song.getImage());
-
     }
 
 //Buttons to get to MainActivity/DisneyActivity/MusicalsActivity
-
     @Override
     public void onClick(View view) {
         switch(view.getId()) {
@@ -78,9 +75,9 @@ public class SongDetailsActivity extends AppCompatActivity implements View.OnCli
             case R.id.disney_from_details:
                 Intent disneyIntent = new Intent(SongDetailsActivity.this, DisneyActivity.class);
                 SongDetailsActivity.this.startActivity(disneyIntent);
+                break;
         }
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -92,6 +89,4 @@ public class SongDetailsActivity extends AppCompatActivity implements View.OnCli
         }
         return super.onOptionsItemSelected(item);
     }
-
-
 }
