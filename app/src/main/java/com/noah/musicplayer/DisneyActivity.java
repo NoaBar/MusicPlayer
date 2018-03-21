@@ -21,6 +21,7 @@ public class DisneyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.songs_list);
 
+
         //Create an array of songs
         final ArrayList<Song> songs = new ArrayList<>();
         songs.add(new Song("Two worlds", "Tarzan", "Phil Collins",

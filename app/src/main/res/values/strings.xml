@@ -10,4 +10,5 @@
     <string name="character_title">Character</string>
     <string name="year_title">Year</string>
     <string name="choose_genre">What would you like to listen to?</string>
+    <string name="home">home</string>
 </resources>
